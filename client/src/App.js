@@ -7,7 +7,7 @@ import Login from './components/auth/Login';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
 import PrivateRoute from './components/routing/PrivateRoute';
-import CreateProfile from './components/profile-forms/CreateProfile';
+import ProfileForm from './components/profile-forms/ProfileForm';
 
 import setAuthToken from './utils/setAuthToken';
 import { LOGOUT } from './actions/types';
@@ -45,9 +45,21 @@ const App = () => {
                         path="/dashboard"
                         element={<PrivateRoute component={Dashboard} />}
                     />
-                    <Route
+                    {/* <Route
                         path="/createProfile"
                         element={<PrivateRoute component={CreateProfile} />}
+                    />
+                    <Route
+                        path="/edit-profile"
+                        element={<PrivateRoute component={EditProfile} />}
+                    /> */}
+                    <Route
+                        path="create-profile"
+                        element={<PrivateRoute component={ProfileForm} />}
+                    />
+                    <Route
+                        path="edit-profile"
+                        element={<PrivateRoute component={ProfileForm} />}
                     />
                 </Routes>
             </Router>

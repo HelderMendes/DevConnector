@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
+import DashboardActions from './DashboardActions';
 import { getCurrentProfile } from '../../actions/profile';
 import { Link } from 'react-router-dom';
 // import profile from '../../reducers/profile';
@@ -32,14 +33,16 @@ const Dashboard = ({
             </p>
 
             {!isProfileEmpty ? (
+                // {profile !== null ? (
                 <>
-                    <h2>Has Profile</h2>
+                    <DashboardActions />
+                    {/* <h2>Has Profile</h2>
                     <div className="my-2">
                         <button className="btn btn-danger">
                             <i className="fas fa-user-minus" /> Delete My
                             Account
                         </button>
-                    </div>
+                    </div> */}
                 </>
             ) : (
                 <>
