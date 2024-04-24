@@ -1,28 +1,30 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { deleteExperience } from '../../actions/profile';
 import formatDate from '../../utils/formatDate';
+import { deleteExperience } from '../../actions/profile';
 
 const Experience = ({ experience, deleteExperience }) => {
     const experiences = experience.map((exp) => (
         <tr key={exp._id}>
             <td>{exp.company}</td>
             <td className="hide-sm">{exp.title}</td>
+            <td className="hide-sm">{exp.location}</td>
             <td>
-                {formatDate(exp.from)} - {exp.to ? formatDate(exp.to) : 'Now'}
+                {formatDate(exp.startDate)} –{' '}
+                {exp.to ? formatDate(exp.to) : ' Present Date'}
             </td>
+            <td>{exp.description}</td>
             <td>
                 <button
-                    onClick={() => deleteExperience(exp._id)}
                     className="btn btn-danger"
+                    onClick={() => deleteExperience(exp._id)}
                 >
                     Delete
                 </button>
             </td>
         </tr>
     ));
-
     return (
         <Fragment>
             <h2 className="my-2">Experience Credentials</h2>
@@ -30,9 +32,10 @@ const Experience = ({ experience, deleteExperience }) => {
                 <thead>
                     <tr>
                         <th>Company</th>
-                        <th className="hide-sm">Title</th>
-                        <th className="hide-sm">Years</th>
-                        <th />
+                        <th className="hede-sm">Function</th>
+                        <th className="hede-sm">Lacation</th>
+                        <th className="hide-sm">Start Date ...</th>
+                        <th className="hide-sm">Description</th>
                     </tr>
                 </thead>
                 <tbody>{experiences}</tbody>

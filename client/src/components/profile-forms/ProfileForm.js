@@ -210,7 +210,7 @@ const ProfileForm = ({
                 {displaySocialInputs && (
                     <Fragment>
                         <div className="form-group social-input">
-                            <i className="fab fa-twitter fa-2x" />
+                            <i className="fab  fa-btands fa-square-x-twitter fa-2x" />
                             <input
                                 type="text"
                                 placeholder="Twitter URL"
@@ -221,7 +221,7 @@ const ProfileForm = ({
                         </div>
 
                         <div className="form-group social-input">
-                            <i className="fab fa-facebook fa-2x" />
+                            <i className="fab  fa-btands fa-square-facebook fa-2x" />
                             <input
                                 type="text"
                                 placeholder="Facebook URL"
@@ -232,7 +232,7 @@ const ProfileForm = ({
                         </div>
 
                         <div className="form-group social-input">
-                            <i className="fab fa-youtube fa-2x" />
+                            <i className="fab  fa-btands fa-square-youtube fa-2x" />
                             <input
                                 type="text"
                                 placeholder="YouTube URL"
@@ -243,7 +243,7 @@ const ProfileForm = ({
                         </div>
 
                         <div className="form-group social-input">
-                            <i className="fab fa-linkedin fa-2x" />
+                            <i className="fab fa-btands fa-linkedin fa-2x" />
                             <input
                                 type="text"
                                 placeholder="Linkedin URL"
@@ -254,7 +254,7 @@ const ProfileForm = ({
                         </div>
 
                         <div className="form-group social-input">
-                            <i className="fab fa-instagram fa-2x" />
+                            <i className="fab  fa-btands fa-square-instagram fa-2x" />
                             <input
                                 type="text"
                                 placeholder="Instagram URL"

@@ -70,7 +70,7 @@ router.get('/:id', auth, checkObjectId('id'), async (req, res) => {
     }
 });
 
-// @route           DELET  api/posts/:id
+// @route           DELETE  api/posts/:id
 // @desc            Delete a post
 // @access        Private
 router.delete('/:id', auth, checkObjectId('id'), async (req, res) => {
