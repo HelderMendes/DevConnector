@@ -322,7 +322,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
 });
 
 // @route       GET api/profile/github/:username
-// @desc        Get user ripos from GitHub
+// @desc        Get user repos from GitHub
 // @access    Public
 router.get('/github/:username', async (req, res) => {
     try {
@@ -330,8 +330,8 @@ router.get('/github/:username', async (req, res) => {
             `https://api.github.com/users/${req.params.username}/repos?per_page=5&sort=created:asc`
         );
         const headers = {
-            'user-agent': 'node.js',
-            Authorization: `token ${config.get('githubToken')}`,
+            // 'user-agent': 'node.js',
+            // Authorization: `${config.get('githubToken')}`,
         };
 
         const gitHubResponse = await axios.get(uri, { headers });

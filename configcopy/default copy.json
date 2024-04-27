@@ -1,0 +1,18 @@
+{
+    "mongoURI": "mongodb+srv://helder:o1mL0T0Ag3D9wa5B@mern-fs.26zsfnz.mongodb.net/?retryWrites=true&w=majority&appName=mern-fs",
+    "jwtSecret": "mySecretToken",
+    "githubClientId": "b1365831048c67125865",
+    "githubSecret": "0c319b91984624ea64a29b98653a197790ff3914",
+    "githubToken": "0940c86fcef491e6b6e1fb38cf8072eee4e10389"
+}
+
+// Client ID
+// 48fe411c8f84a91be8f6
+
+// Owned by: @HelderMendes
+
+// App ID: 885330
+
+// Client ID: Iv1.7c601cabb5f08be3
+
+// 0940c86fcef491e6b6e1fb38cf8072eee4e10389

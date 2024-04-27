@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://helder:o1mL0T0Ag3D9wa5B@mern-fs.26zsfnz.mongodb.net/?retryWrites=true&w=majority&appName=mern-fs",
+    "jwtSecret": "mySecretToken",
+    "githubClientId": "b87c0a06d35bd96be817",
+    "githubSecret": "5e1f69876aa450a6b7925c1ee7d10581d001cd5c"
+}

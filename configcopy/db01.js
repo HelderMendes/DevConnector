@@ -7,10 +7,10 @@ const db = config.get('mongoURI');
 const connectDB = async () => {
     try {
         await mongoose.connect(db);
-        console.log('MongDB is Ready and Connected...');
+        console.log('MongDB is Connected...');
     } catch (err) {
         console.error(err.message);
-        //Exit process with or if it has faill (escape from the process)
+        //Exit process or whit a failure (escape from the process)
         process.exit(1);
     }
 };
