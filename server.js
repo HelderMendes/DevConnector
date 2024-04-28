@@ -7,8 +7,11 @@ const app = express();
 // Connect Database
 connectDB();
 
-// Innit Middleware
-app.use(express.json({ extended: false }));
+// // Innit Middleware
+// app.use(express.json({ extended: false }));
+
+// Init Middleware
+app.use(express.json());
 
 // app.get('/', (req, res) => res.send('API Running'));
 
